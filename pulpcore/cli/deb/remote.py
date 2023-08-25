@@ -62,6 +62,14 @@ apt_remote_common_options = [
             "Will sync all available if specified once with the empty string."
         ),
     ),
+    click.option(
+        "--ignore-missing-package-indices",
+        is_flag=True,
+        default=None,
+        help=_(
+            "Set this flag in order to sync from partial mirrors."
+        ),
+    ),
 ]
 
 distribution_help = _("Distribution to sync; can be specified multiple times.")
